@@ -1,0 +1,224 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --third-color: #ffffff;
+    --focus-color: #2196f3;
+    --hero-bcg: #2f303a;
+    --footer-bcg: #2f303a;
+    --studio-text-color: #000000;
+    --contacts-text-color: #757575;
+    --footer-contact: rgba(255, 255, 255, 0.6);
+    --filter-button-color: #f5f4fa;
+}
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    list-style: none;
+}
+
+/* глобальные стили. шрифт Ralewey указан как альтернативный */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: var(--primary-text-color);
+    background-color: var(--third-color);
+}
+
+/* стили для header */
+
+.logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--focus-color);
+    text-decoration: none;
+}
+
+.header .studio {
+    color: var(--studio-text-color);
+}
+
+.site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.site-nav .current {
+    color: var(--focus-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--focus-color);
+}
+
+.contacts .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--contacts-text-color);
+    text-decoration: none;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--focus-color);
+}
+
+/* стили для footer */
+
+.footer {
+    background-color: var(--footer-bcg);
+}
+
+.footer .studio {
+    color: var(--third-color);
+}
+
+.address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
+.address .map {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.address .map:hover,
+.address .map:focus {
+    color: var(--focus-color);
+}
+
+.address .link {
+    color: var(--footer-contact);
+    text-decoration: none;
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--focus-color);
+}
+
+/* стили index.html main  */
+
+.hero {
+    background-color: var(--hero-bcg);
+}
+
+.hero .title {
+    color: var(--third-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: Roboto;
+    font-style: normal;
+    background: var(--focus-color);
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    background: #188ce8;
+}
+
+.advantages .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advantages .content {
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--contacts-text-color);
+}
+
+.team {
+    background-color: var(--filter-button-color);
+}
+
+.activities .title,
+.team > .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+}
+
+.team-list .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+}
+
+.team-list .content {
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    color: var(--contacts-text-color);
+}
+
+/* стили для portofolio.html main */
+
+.filter-button .button {
+    background: var(--filter-button-color);
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+}
+
+.filter-button .button:hover,
+.filter-button .button:focus {
+    background: var(--focus-color);
+    color: var(--third-color);
+}
+
+.examples-list .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples-list .content {
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--contacts-text-color);
+}
