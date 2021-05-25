@@ -12,13 +12,8 @@
 }
 
 * {
-    box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
     list-style: none;
 }
-
-/* глобальные стили. шрифт Ralewey указан как альтернативный */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -130,7 +125,6 @@ body {
 }
 
 .button {
-    font-family: Roboto;
     font-style: normal;
     background: var(--focus-color);
     color: var(--third-color);
