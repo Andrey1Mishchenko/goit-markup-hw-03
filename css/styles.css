@@ -22,9 +22,41 @@ body {
     background-color: var(--third-color);
 }
 
+ul,
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* outline: 2px solid red; */
+}
+
 /* стили для header */
 
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    /* align-items: center; */
+}
+
 .logo {
+    display: block;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -33,19 +65,33 @@ body {
     letter-spacing: 0.03em;
     color: var(--focus-color);
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 .header .studio {
     color: var(--studio-text-color);
 }
 
+.site-nav {
+    display: flex;
+}
+
 .site-nav .link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-nav .current {
@@ -57,13 +103,25 @@ body {
     color: var(--focus-color);
 }
 
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contacts .link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--contacts-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacts .link:hover,
@@ -77,8 +135,18 @@ body {
     background-color: var(--footer-bcg);
 }
 
+.footer .container {
+    padding-top: 60px;
+}
+
 .footer .studio {
     color: var(--third-color);
+}
+
+.footer .logo {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    padding: 0;
 }
 
 .address {
@@ -87,6 +155,7 @@ body {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
+    padding-bottom: 60px;
 }
 
 .address .map {
@@ -107,6 +176,10 @@ body {
 .address .link:hover,
 .address .link:focus {
     color: var(--focus-color);
+}
+
+.address-list-item {
+    margin-bottom: 9px;
 }
 
 /* стили index.html main  */
