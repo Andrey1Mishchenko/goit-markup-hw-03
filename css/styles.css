@@ -11,10 +11,7 @@
     --filter-button-color: #f5f4fa;
 }
 
-* {
-    list-style: none;
-}
-
+/* глобальные стили */
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -29,17 +26,23 @@ h2,
 h3 {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    /* outline: 2px solid red; */
+    outline: 1px solid red;
 }
 
-/* стили для header */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* глобальные стили */
 
+/* стили для header */
 .header {
     border-bottom: 1px solid #ececec;
 }
@@ -52,7 +55,6 @@ h3 {
 
 .navigation {
     display: flex;
-    /* align-items: center; */
 }
 
 .logo {
@@ -65,8 +67,11 @@ h3 {
     letter-spacing: 0.03em;
     color: var(--focus-color);
     text-decoration: none;
+}
+
+.header .logo {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     margin-right: 93px;
 }
 
@@ -87,7 +92,7 @@ h3 {
     color: var(--primary-text-color);
     text-decoration: none;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
 }
 
 .site-nav-item:not(:last-child) {
@@ -121,22 +126,20 @@ h3 {
     color: var(--contacts-text-color);
     text-decoration: none;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
     color: var(--focus-color);
 }
+/* стили для header */
 
 /* стили для footer */
-
 .footer {
     background-color: var(--footer-bcg);
-}
-
-.footer .container {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .studio {
@@ -145,8 +148,7 @@ h3 {
 
 .footer .logo {
     display: inline-block;
-    margin: 0 0 20px 0;
-    padding: 0;
+    margin-bottom: 20px;
 }
 
 .address {
@@ -155,34 +157,39 @@ h3 {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    padding-bottom: 60px;
 }
 
-.address .map {
+.address-list-item .map {
     color: var(--third-color);
     text-decoration: none;
 }
 
-.address .map:hover,
-.address .map:focus {
+.address-list-item .map:hover,
+.address-list-item .map:focus {
     color: var(--focus-color);
 }
 
-.address .link {
+.address-list-item .link {
     color: var(--footer-contact);
     text-decoration: none;
 }
 
-.address .link:hover,
-.address .link:focus {
+.address-list-item .link:hover,
+.address-list-item .link:focus {
     color: var(--focus-color);
 }
 
-.address-list-item {
+.address-list-item:not(:last-child) {
     margin-bottom: 9px;
 }
+/* стили для footer */
 
 /* стили index.html main  */
+/* hero section */
+.section.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 .hero {
     background-color: var(--hero-bcg);
@@ -195,6 +202,10 @@ h3 {
     line-height: 1.364;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
+
+    width: 696px;
+    margin: 0 auto 30px;
 }
 
 .button {
@@ -207,7 +218,11 @@ h3 {
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
+
     border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin: 0 auto;
 }
 
 .button:hover,
@@ -215,34 +230,85 @@ h3 {
     cursor: pointer;
     background: #188ce8;
 }
+/* hero section */
 
-.advantages .title {
+/* advantages section */
+.advantages-title {
+    font-size: 0;
+    text-align: center;
+}
+
+.advantages-list {
+    display: flex;
+}
+
+.advantages-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.advantages-list-item > .title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
-.advantages .content {
-    /* font-weight: 400; */
+.advantages-list-item > .content {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
 }
+/* advantages section */
 
+/* activities section */
+.section.activities {
+    padding-top: 0;
+}
+
+.activities .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.activities-list {
+    display: flex;
+}
+
+.activities-list-item {
+    flex-basis: calc ((100% - 60px) / 3);
+}
+
+.activities-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+activities-list-item-img {
+}
+
+/* activities section */
+
+/* team section */
 .team {
     background-color: var(--filter-button-color);
 }
 
+/* общие стили заголовков для секций activities и team */
 .activities .title,
-.team > .title {
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
     letter-spacing: 0.03em;
 }
+/* общие стили заголовков для секций activities и team */
 
 .team-list .title {
     font-weight: 500;
@@ -258,9 +324,10 @@ h3 {
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
 }
+/* team section */
+/* стили index.html main  */
 
 /* стили для portofolio.html main */
-
 .filter-button .button {
     background: var(--filter-button-color);
     color: var(--primary-text-color);
@@ -289,3 +356,4 @@ h3 {
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
 }
+/* стили для portofolio.html main */
