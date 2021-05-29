@@ -44,64 +44,151 @@
         </header>
 
         <main>
-            <!-- <h1>портфолио компании</h1> -->
+            <h1 class="portfolio-title">портфолио компании</h1>
             <section class="section">
-                <!-- <h2>фильтр и проекты</h2> -->
-                <ul class="filter-button">
-                    <li><button type="button" class="button">Все</button></li>
-                    <li><button type="button" class="button">Веб-сайты</button></li>
-                    <li><button type="button" class="button">Приложения</button></li>
-                    <li><button type="button" class="button">Дизайн</button></li>
-                    <li><button type="button" class="button">Маркетинг</button></li>
-                </ul>
+                <div class="container">
+                    <h2 class="filter-title">фильтр и проекты</h2>
+                    <ul class="filter-button-list">
+                        <li class="filter-button-list-item">
+                            <button type="button" class="button">Все</button>
+                        </li>
+                        <li class="filter-button-list-item">
+                            <button type="button" class="button">Веб-сайты</button>
+                        </li>
+                        <li class="filter-button-list-item">
+                            <button type="button" class="button">Приложения</button>
+                        </li>
+                        <li class="filter-button-list-item">
+                            <button type="button" class="button">Дизайн</button>
+                        </li>
+                        <li class="filter-button-list-item">
+                            <button type="button" class="button">Маркетинг</button>
+                        </li>
+                    </ul>
 
-                <ul class="examples-list">
-                    <li>
-                        <img src="./images/technokriak.jpg" width="370" alt="ноутбук" />
-                        <h3 class="title">Технокряк</h3>
-                        <p class="content">Веб-сайт</p>
-                    </li>
-                    <li>
-                        <img src="./images/poster.jpg" width="370" alt="баскетболисты" />
-                        <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                        <p class="content">Дизайн</p>
-                    </li>
-                    <li>
-                        <img src="./images/seafood.jpg" width="370" alt="лого ресторана" />
-                        <h3 class="title">Ресторан Seafood</h3>
-                        <p class="content">Ресторан Seafood</p>
-                    </li>
-                    <li>
-                        <img src="./images/prime.jpg" width="370" alt="наушники" />
-                        <h3 class="title">Проект Prime</h3>
-                        <p class="content">Маркетинг</p>
-                    </li>
-                    <li>
-                        <img src="./images/boxes.jpg" width="370" alt="коробки" />
-                        <h3 class="title">Проект Boxes</h3>
-                        <p class="content">Приложение</p>
-                    </li>
-                    <li>
-                        <img src="./images/noborders.jpg" width="370" alt="монитор" />
-                        <h3 class="title">Inspiration has no Borders</h3>
-                        <p class="content">Веб-сайт</p>
-                    </li>
-                    <li>
-                        <img src="./images/limiteded.jpg" width="370" alt="книжка" />
-                        <h3 class="title">Издание Limited Edition</h3>
-                        <p class="content">Дизайн</p>
-                    </li>
-                    <li>
-                        <img src="./images/lab.jpg" width="370" alt="бирка" />
-                        <h3 class="title">Проект LAB</h3>
-                        <p class="content">Маркетинг</p>
-                    </li>
-                    <li>
-                        <img src="./images/growingb.jpg" width="370" alt="работа с ноутбуком" />
-                        <h3 class="title">Growing Business</h3>
-                        <p class="content">Приложение</p>
-                    </li>
-                </ul>
+                    <ul class="examples-list">
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img src="./images/technokriak.jpg" width="370" alt="ноутбук" />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Технокряк</h3>
+                                    <p class="content">Веб-сайт</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img
+                                        src="./images/poster.jpg"
+                                        width="370"
+                                        alt="баскетболисты"
+                                    />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                                    <p class="content">Дизайн</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img
+                                        src="./images/seafood.jpg"
+                                        width="370"
+                                        alt="лого ресторана"
+                                    />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Ресторан Seafood</h3>
+                                    <p class="content">Приложение</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img src="./images/prime.jpg" width="370" alt="наушники" />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Проект Prime</h3>
+                                    <p class="content">Маркетинг</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img src="./images/boxes.jpg" width="370" alt="коробки" />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Проект Boxes</h3>
+                                    <p class="content">Приложение</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img src="./images/noborders.jpg" width="370" alt="монитор" />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Inspiration has no Borders</h3>
+                                    <p class="content">Веб-сайт</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img src="./images/limiteded.jpg" width="370" alt="книжка" />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Издание Limited Edition</h3>
+                                    <p class="content">Дизайн</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img src="./images/lab.jpg" width="370" alt="бирка" />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Проект LAB</h3>
+                                    <p class="content">Маркетинг</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="examples-list-item">
+                            <article class="examples-card">
+                                <div class="examples-card-pic">
+                                    <img
+                                        src="./images/growingb.jpg"
+                                        width="370"
+                                        alt="работа с ноутбуком"
+                                    />
+                                </div>
+
+                                <div class="examples-card-content">
+                                    <h3 class="title">Growing Business</h3>
+                                    <p class="content">Приложение</p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
 

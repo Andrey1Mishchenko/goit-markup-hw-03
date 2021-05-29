@@ -9,6 +9,7 @@
     --contacts-text-color: #757575;
     --footer-contact: rgba(255, 255, 255, 0.6);
     --filter-button-color: #f5f4fa;
+    --examples-card-border: #eeeeee;
 }
 
 /* глобальные стили */
@@ -33,7 +34,7 @@ h3 {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .section {
@@ -232,10 +233,14 @@ h3 {
 /* hero section */
 
 /* advantages section */
-.advantages-title {
+/* общий стиль скрытых заголовков "Главные преимущества", "портфолио компании" и "фильтр и проекты"  */
+.advantages-title,
+.portfolio-title,
+.filter-title {
     font-size: 0;
     text-align: center;
 }
+/* общий стиль скрытых заголовков "Главные преимущества", "портфолио компании" и "фильтр и проекты"  */
 
 .advantages-list {
     display: flex;
@@ -298,6 +303,7 @@ h3 {
 
 .activities-list-item-img {
     display: block;
+    max-width: 100%;
 }
 /* activities section */
 
@@ -325,6 +331,7 @@ h3 {
 
 .team-list-item-img {
     display: block;
+    max-width: 100%;
     margin-bottom: 30px;
 }
 
@@ -348,32 +355,74 @@ h3 {
 /* стили index.html main  */
 
 /* стили для portofolio.html main */
-.filter-button .button {
+/* filter-button-list */
+.filter-button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-button-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter-button-list-item .button {
     background: var(--filter-button-color);
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.625;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
 }
 
-.filter-button .button:hover,
-.filter-button .button:focus {
+.filter-button-list-item .button:hover,
+.filter-button-list-item .button:focus {
     background: var(--focus-color);
     color: var(--third-color);
 }
+/* filter-button-list */
 
-.examples-list .title {
+/* examples-list */
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.examples-list-item {
+    flex-basis: calc(100% / 3 -30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.examples-card-pic > img {
+    display: block;
+    max-width: 100%;
+}
+
+.examples-card-content {
+    padding: 20px 24px 19px;
+    border-left: 1px solid var(--examples-card-border);
+    border-right: 1px solid var(--examples-card-border);
+    border-bottom: 1px solid var(--examples-card-border);
+}
+
+.examples-card-content .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
 }
 
-.examples-list .content {
-    /* font-weight: 400; */
+.examples-card-content .content {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
 }
+/* examples-list */
 /* стили для portofolio.html main */
