@@ -273,26 +273,33 @@ h3 {
     padding-top: 0;
 }
 
-.activities .title {
+/* общие стили заголовков для секций activities и team */
+.activities-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
 }
+/* общие стили заголовков для секций activities и team */
 
 .activities-list {
     display: flex;
 }
 
 .activities-list-item {
-    flex-basis: calc ((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .activities-list-item:not(:last-child) {
     margin-right: 30px;
 }
 
-activities-list-item-img {
+.activities-list-item-img {
+    display: block;
 }
-
 /* activities section */
 
 /* team section */
@@ -300,29 +307,43 @@ activities-list-item-img {
     background-color: var(--filter-button-color);
 }
 
-/* общие стили заголовков для секций activities и team */
-.activities .title,
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    letter-spacing: 0.03em;
+.team-list {
+    display: flex;
 }
-/* общие стили заголовков для секций activities и team */
 
-.team-list .title {
+.team-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: var(--third-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list-item-img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.team-list-item .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.team-list .content {
-    /* font-weight: 400; */
+.team-list-item .content {
     font-size: 16px;
     line-height: 1.188;
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
+    text-align: center;
 }
 /* team section */
 /* стили index.html main  */
